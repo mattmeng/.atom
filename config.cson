@@ -1,9 +1,6 @@
 "*":
   core:
     autoHideMenuBar: true
-    disabledPackages: [
-      "tabs"
-    ]
     projectHome: "/home/matt/projects"
     themes: [
       "seti-ui"
@@ -20,6 +17,8 @@
     zoomFontWhenCtrlScrolling: false
   "exception-reporting":
     userId: "b81ba95e-ad0a-44e4-2193-b21ec62012c0"
+  fonts:
+    fontFamily: "Inconsolata"
   minimap:
     displayPluginsControls: false
   "tree-view-open-files": {}
