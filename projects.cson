@@ -1,0 +1,5 @@
+em_client:
+  title: "em_client"
+  paths: [
+    "/home/matt/projects/em_client"
+  ]

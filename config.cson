@@ -4,14 +4,21 @@
     disabledPackages: [
       "seti-icons"
     ]
+    packagesWithKeymapsDisabled: [
+      "task-list"
+    ]
     projectHome: "/home/matt/projects"
     themes: [
       "seti-ui"
       "seti-syntax"
     ]
+    customFileTypes:
+      "source.pascal": [
+        'inc'
+      ]
   editor:
     fontFamily: "Inconsolata"
-    fontSize: 16
+    fontSize: 21
     invisibles: {}
     scrollPastEnd: true
     showIndentGuide: true
@@ -28,3 +35,12 @@
   "tree-view-open-files": {}
   welcome:
     showOnStartup: false
+".gpd.source":
+  editor:
+    softWrapHangingIndent: 4
+".gpd_note.source":
+  editor:
+    softWrapHangingIndent: 4
+".pascal.source":
+  editor:
+    softWrapHangingIndent: 4
