@@ -1,7 +1,7 @@
 {
   "name": "minimap",
   "main": "./lib/main",
-  "version": "4.24.6",
+  "version": "4.25.0",
   "private": true,
   "description": "A preview of the full source code.",
   "author": {
@@ -32,7 +32,7 @@
   },
   "license": "MIT",
   "engines": {
-    "atom": ">=0.208.0"
+    "atom": ">=1.7.0"
   },
   "providedServices": {
     "minimap": {
@@ -40,6 +40,130 @@
       "versions": {
         "1.0.0": "provideMinimapServiceV1"
       }
+    }
+  },
+  "viewProviders": [
+    "minimapViewProvider"
+  ],
+  "configSchema": {
+    "plugins": {
+      "type": "object",
+      "properties": {}
+    },
+    "autoToggle": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayMinimapOnLeft": {
+      "type": "boolean",
+      "default": false
+    },
+    "displayCodeHighlights": {
+      "type": "boolean",
+      "default": true,
+      "description": "Toggles the render of the buffer tokens in the minimap."
+    },
+    "displayPluginsControls": {
+      "type": "boolean",
+      "default": true,
+      "description": "You need to restart Atom for this setting to be effective."
+    },
+    "minimapScrollIndicator": {
+      "type": "boolean",
+      "default": true,
+      "description": "Toggles the display of a side line showing which part of the buffer is currently displayed by the minimap. This side line will only appear if the minimap is taller than the editor view height."
+    },
+    "useHardwareAcceleration": {
+      "type": "boolean",
+      "default": true
+    },
+    "adjustMinimapWidthToSoftWrap": {
+      "type": "boolean",
+      "default": true,
+      "description": "If this option is enabled and Soft Wrap is checked then the Minimap max width is set to the Preferred Line Length value."
+    },
+    "adjustMinimapWidthOnlyIfSmaller": {
+      "type": "boolean",
+      "default": true,
+      "description": "If this option and `adjustMinimapWidthToSoftWrap` are enabled the minimap width will never go past the limit sets by CSS. On the other hand, when disabled the minimap will expand to honor the preferred line width."
+    },
+    "devicePixelRatioRounding": {
+      "type": "boolean",
+      "default": true,
+      "description": "Toggles the rounding of the devicePixelRatio in the minimap."
+    },
+    "charWidth": {
+      "type": "number",
+      "default": 1,
+      "minimum": 0.5
+    },
+    "charHeight": {
+      "type": "number",
+      "default": 2,
+      "minimum": 0.5
+    },
+    "interline": {
+      "type": "number",
+      "default": 1,
+      "minimum": 0,
+      "description": "The space between lines in the minimap in pixels."
+    },
+    "textOpacity": {
+      "type": "number",
+      "default": 0.6,
+      "minimum": 0,
+      "maximum": 1,
+      "description": "The opacity used to render the line's text in the minimap."
+    },
+    "scrollAnimation": {
+      "type": "boolean",
+      "default": false,
+      "description": "Enables animations when scrolling by clicking on the minimap."
+    },
+    "scrollAnimationDuration": {
+      "type": "integer",
+      "default": 300,
+      "description": "The duration of scrolling animations when clicking on the minimap."
+    },
+    "moveCursorOnMinimapClick": {
+      "type": "boolean",
+      "default": false,
+      "description": "Moves the cursor to the beginning of the target line when clicking on the minimap"
+    },
+    "smoothScrolling": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether to offset the minimap canvas when scrolling to keep the scroll smooth. When `true` the minimap canvas will be offseted, resulting in a smoother scroll, but with the side-effect of a blurry minimap when the canvas is placed between pixels. When `false` the canvas will always stay at the same position, and will never look blurry, but the scroll will appear more jagged."
+    },
+    "independentMinimapScroll": {
+      "type": "boolean",
+      "title": "Independent Minimap Scroll On Mouse Wheel Events",
+      "default": false,
+      "description": "When enabled, using the mouse wheel over the Minimap will make it scroll independently of the text editor. The Minimap will still sync with the editor whenever the editor is scrolled, but it will no longer relay the mouse wheel events to the editor."
+    },
+    "scrollSensitivity": {
+      "type": "number",
+      "default": 0.5,
+      "description": "The scrolling speed when the `Independent Minimap Scroll On Mouse Wheel Events` setting is enabled."
+    },
+    "createPluginInDevMode": {
+      "type": "boolean",
+      "default": false
+    },
+    "absoluteMode": {
+      "type": "boolean",
+      "default": false,
+      "description": "When enabled the text editor content will be able to flow below the minimap."
+    },
+    "adjustAbsoluteModeHeight": {
+      "type": "boolean",
+      "default": false,
+      "description": "When enabled and `Absolute Mode` is also enabled, the minimap height will be adjusted to only take the space required by the text editor content, leaving the space below triggering mouse events on the text editor. **Be aware this can have some impact on performances as the minimap canvases will be resized every time a change in the editor make its height change.**"
+    },
+    "ignoreWhitespacesInTokens": {
+      "type": "boolean",
+      "default": false,
+      "description": "When enabled, text editor tokens are rendered as plain blocks, with no regards to the whitespaces they contains."
     }
   },
   "dependencies": {
@@ -92,10 +216,10 @@
     "url": "https://github.com/atom-minimap/minimap/issues"
   },
   "homepage": "https://github.com/atom-minimap/minimap#readme",
-  "_id": "minimap@4.24.6",
-  "_shasum": "035178c2b1248cc38c49395fdf79f0dfc2611e1c",
-  "_resolved": "file:../d-116523-18979-1wtk343/package.tgz",
-  "_from": "../d-116523-18979-1wtk343/package.tgz",
+  "_id": "minimap@4.25.0",
+  "_shasum": "be84b09e474576cdebe9e5eb6d8b7acf6b019784",
+  "_resolved": "file:../d-116816-21950-5she4d/package.tgz",
+  "_from": "../d-116816-21950-5she4d/package.tgz",
   "_atomModuleCache": {
     "version": 1,
     "dependencies": [
@@ -131,7 +255,7 @@
       },
       {
         "name": "es5-ext",
-        "version": "0.10.11",
+        "version": "0.10.12",
         "path": "node_modules/atom-utils/node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/index.js"
       },
       {
@@ -141,7 +265,7 @@
       },
       {
         "name": "es6-symbol",
-        "version": "3.0.2",
+        "version": "3.1.0",
         "path": "node_modules/atom-utils/node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-symbol/index.js"
       },
       {
@@ -166,7 +290,7 @@
       },
       {
         "name": "event-kit",
-        "version": "2.0.0",
+        "version": "2.1.0",
         "path": "node_modules/atom-utils/node_modules/grim/node_modules/event-kit/lib/event-kit.js"
       },
       {
@@ -213,7 +337,6 @@
     "extensions": {
       ".json": [
         "esdoc.json",
-        "lib/config-schema.json",
         "node_modules/atom-utils/node_modules/event-kit/api.json",
         "node_modules/atom-utils/node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/d/package.json",
         "node_modules/atom-utils/node_modules/event-kit/node_modules/grim/node_modules/emissary/node_modules/es6-weak-map/node_modules/es5-ext/node_modules/es6-iterator/package.json",
@@ -962,7 +1085,7 @@
         ],
         "dependencies": {
           "es6-iterator": "2",
-          "es6-symbol": "~3.0.2"
+          "es6-symbol": "~3.1"
         }
       },
       {
@@ -985,7 +1108,7 @@
         ],
         "dependencies": {
           "d": "~0.1.1",
-          "es5-ext": "~0.10.10"
+          "es5-ext": "~0.10.11"
         }
       },
       {

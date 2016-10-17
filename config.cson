@@ -1,6 +1,10 @@
 "*":
   core:
     autoHideMenuBar: true
+    customFileTypes:
+      "source.pascal": [
+        "inc"
+      ]
     disabledPackages: [
       "seti-icons"
     ]
@@ -12,10 +16,6 @@
       "seti-ui"
       "seti-syntax"
     ]
-    customFileTypes:
-      "source.pascal": [
-        'inc'
-      ]
   editor:
     fontFamily: "Inconsolata"
     fontSize: 21
@@ -32,9 +32,25 @@
   "highlight-selected": {}
   minimap:
     displayPluginsControls: false
+  "todo-show":
+    ignoreThesePaths: [
+      "**/node_modules/"
+      "**/vendor/"
+      "**/bower_components/"
+      "**/NVDevices/"
+      "**/NVClient/"
+      "**/pkgs/"
+      "*/database/"
+      "**/siem/"
+    ]
+    sortBy: "Path"
+    statusBarIndicator: true
   "tree-view-open-files": {}
   welcome:
     showOnStartup: false
+".diff.source":
+  editor:
+    softWrapHangingIndent: 4
 ".gpd.source":
   editor:
     softWrapHangingIndent: 4
