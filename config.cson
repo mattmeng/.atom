@@ -7,7 +7,6 @@
       ]
     disabledPackages: [
       "seti-icons"
-      "tabs"
     ]
     packagesWithKeymapsDisabled: [
       "task-list"
@@ -43,6 +42,7 @@
   "seti-ui":
     compactView: true
     font: "Default Atom Font"
+    hideTabs: true
   tabs: {}
   "todo-show":
     ignoreThesePaths: [
@@ -59,6 +59,7 @@
     statusBarIndicator: true
   "tree-view": {}
   "tree-view-extended":
+    maxHeight: 0
     stickyOpenFiles: true
   "tree-view-open-files": {}
   welcome:
