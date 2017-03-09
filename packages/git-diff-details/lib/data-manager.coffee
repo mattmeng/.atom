@@ -37,7 +37,7 @@ module.exports = class DiffDetailsDataManager
   updateLineDiffDetails: ->
     if !@lineDiffDetails? or @lineDiffDetailsInvalidated
       @prepareLineDiffDetails(@repo, @path, @text)
-      @prepareWordDiffs(@lineDiffDetails)
+      @prepareWordDiffs(@lineDiffDetails) if @lineDiffDetails
 
     @lineDiffDetailsInvalidated = false
     @lineDiffDetails

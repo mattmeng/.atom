@@ -30,4 +30,5 @@
   'ctrl-b': 'bookmarks:toggle-bookmark'
   'ctrl-shift-down': 'bookmarks:jump-to-next-bookmark'
   'ctrl-shift-up': 'bookmarks:jump-to-previous-bookmark'
-  'ctrl-alt-b': '	bookmarks:view-all'
+  'ctrl-alt-b': 'bookmarks:view-all'
+  'ctrl-alt-p':	'project-manager:list-projects'

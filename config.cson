@@ -7,11 +7,13 @@
       ]
     disabledPackages: [
       "seti-icons"
+      "tabs"
     ]
     packagesWithKeymapsDisabled: [
       "task-list"
     ]
     projectHome: "/home/matt/projects"
+    telemetryConsent: "no"
     themes: [
       "seti-ui"
       "seti-syntax"
@@ -32,6 +34,16 @@
   "highlight-selected": {}
   minimap:
     displayPluginsControls: false
+  "nord-atom-ui": {}
+  pigments:
+    dismissableReloadNotifications: false
+  "project-manager":
+    alwaysOpenInSameWindow: true
+    includeGitRepositories: true
+  "seti-ui":
+    compactView: true
+    font: "Default Atom Font"
+  tabs: {}
   "todo-show":
     ignoreThesePaths: [
       "**/node_modules/"
@@ -45,9 +57,15 @@
     ]
     sortBy: "Path"
     statusBarIndicator: true
+  "tree-view": {}
+  "tree-view-extended":
+    stickyOpenFiles: true
   "tree-view-open-files": {}
   welcome:
     showOnStartup: false
+".diff":
+  editor:
+    softWrapHangingIndent: 4
 ".diff.source":
   editor:
     softWrapHangingIndent: 4

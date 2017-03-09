@@ -1,5 +1,44 @@
 # Changelog
 
+## 1.6.1
+- Add additional file icons:
+  - Excel
+  - Maven
+  - Spring
+  - SQL
+  - Word
+
+## 1.6.0
+- Bump version to fix incorrect publish
+
+## 1.5.0
+- Bump atom target version to 1.13
+- Fix typo in README
+- Fix deprecation warnings
+  - Remove shadow psudo-selector
+  - Prepend syntax selectors with syntax--
+- Add additional icons:
+  - .babelrc
+  - .eslintrc
+  - .gitmodules
+  - rollup.config.js
+  - yarn.lock
+  - yarn.clean
+
+## 1.4.0
+- Bump atom target version to 1.12
+- Minify icons
+- Update scrollbars
+- Update workspace.less
+- Use npm icon for .npmrc
+- Change preview settings icons background colors for todo-show package
+- Correct link to icon mapping file
+- Update autocomplete-plus labels
+- Add icons for .bat,.cmd
+
+## 1.3.2
+- Update status bar styles for 1.8
+
 ## 1.3.1
 - Tone down styles for tree-view-git-branch
 - Update terminal-plus styles

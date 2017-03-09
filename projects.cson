@@ -1,5 +1,15 @@
-em_client:
-  title: "em_client"
-  paths: [
-    "/home/matt/projects/em_client"
-  ]
+[
+  {
+    title: "em_client"
+    paths: [
+      "/home/matt/projects/em_client"
+    ]
+  }
+  {
+    title: "siem"
+    group: "siem"
+    paths: [
+      "/home/matt/projects/siem"
+    ]
+  }
+]

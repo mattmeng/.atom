@@ -10,7 +10,7 @@ This is the latest version of the Seti UI theme. It's a dark interface theme cra
 
 ##### **Please Note:** This is the Seti interface theme for [Atom](http://atom.io) only
 
-This is for the _interface_ of the Atom editor. I also have [Seti Syntax](https://atom.io/themes/seti-syntax) for theming the _code view_ in Atom.
+This is for the _interface_ of the Atom editor. I also have [Seti Syntax](https://atom.io/themes/seti-syntax) for theming the _code view_ in Atom. In addition, there is a new [Seti theme](https://www.npmjs.com/package/seti-hyper) for [Hyper](https://hyper.is/).
 
 If these are not the droids you're looking for, may I point you in the drection of these great ports:
 
@@ -91,7 +91,7 @@ Anyone is welcome to contribute to the development of this theme. If can be a lo
 ### 1. Fork
 If you're keen to contribute, start by [forking](https://github.com/jesseweed/seti-ui/tree/1.0-beta#fork-destination-box) the repo and cloning it to your computer.
 
-**Note:** To use the development version, you must first install the production version (`apm uninstall seti-ui`), then and run the following commands:
+**Note:** To use the development version, you must first uninstall the production version (`apm uninstall seti-ui`), then and run the following commands:
 
 ```bash
 # To install the local version as an Atom Theme
@@ -117,7 +117,7 @@ Once you're done working locally and ready to install the production version aga
 -----
 
 ## Adding File Icons
-The process of adding file icons is still a bit complex, but it _has_ been greatly simplified in 1.0. It does howevere require that you have [node](https://nodejs.org/en/) and [gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) installed.
+The process of adding file icons is still a bit complex, but it _has_ been greatly simplified in 1.0. It does however require that you have [node](https://nodejs.org/en/) and [gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md) installed.
 
 Once you have these, you will need to open a terminal window, navigate to the _seti-ui_ folder and run `npm install` (note you only need to do this once).
 
@@ -125,7 +125,7 @@ Once everything is setup, follow these steps any time you want to add a new icon
 
   1. Create an SVG icon with the name of the language, and save it to the `icons` folder _(do not use any spaces or special characters)_
 
-  2. Navigate to the _seti-ui_ folder in your terminal and run `gulp fonts` (this will add the new svg file to our icon font, update our file as well as the less file with the mixins we'll need to link to the icon later.)
+  2. Navigate to the _seti-ui_ folder in your terminal and run `gulp font` (this will add the new svg file to our icon font, update our file as well as the less file with the mixins we'll need to link to the icon later.)
 
   3. Lastly, open [styles/icons/mapping.less](styles/icons/mapping.less) and create a link for the icon you just added with the `.icon-set` mixin. Assuming you were adding an icon for Sass it might look something like this: ```.icon-set('.scss', 'sass', @pink)```
 
