@@ -1,0 +1,5 @@
+{
+  "atom-workspace atom-text-editor": {
+    "ctrl-l": "select-indented-line:select-line"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/tmp/d-117423-21610-1d4vnww/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/tmp/d-117423-21610-1d4vnww/package.tgz",
+        "spec": "/tmp/d-117423-21610-1d4vnww/package.tgz",
+        "type": "local"
+      },
+      "/tmp/apm-install-dir-117423-21610-nmwb5v"
+    ]
+  ],
+  "_from": "../d-117423-21610-1d4vnww/package.tgz",
+  "_id": "print-code@0.6.4",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/print-code",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/tmp/d-117423-21610-1d4vnww/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/tmp/d-117423-21610-1d4vnww/package.tgz",
+    "spec": "/tmp/d-117423-21610-1d4vnww/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117423-21610-1d4vnww/package.tgz",
+  "_shasum": "3a32f966cde7a6cbad1112ee08c9ae41c14d73eb",
+  "_shrinkwrap": null,
+  "_spec": "/tmp/d-117423-21610-1d4vnww/package.tgz",
+  "_where": "/tmp/apm-install-dir-117423-21610-nmwb5v",
+  "activationCommands": {
+    "atom-workspace": [
+      "print-code:print",
+      "print-code:reset"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/mochizukikotaro/print-code/issues"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
+  "description": "Print souce code which in active pane",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/mochizukikotaro/print-code#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/print-code",
+  "name": "print-code",
+  "optionalDependencies": {},
+  "readme": "# print-code package\n\nPrint source code which in active pane.\n\n## Usage\n\n- cmd-shift-p (macOS)\n- type \"print code\"\n\n![print-code](https://cloud.githubusercontent.com/assets/7911481/22056524/e11db500-dda3-11e6-9a2c-2267ae138940.gif)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mochizukikotaro/print-code.git"
+  },
+  "version": "0.6.4"
+}

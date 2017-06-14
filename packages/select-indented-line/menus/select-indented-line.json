@@ -1,0 +1,18 @@
+{
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Select Indented Line",
+          "submenu": [
+            {
+              "label": "Select Line(s)",
+              "command": "select-indented-line:select-line"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

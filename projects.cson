@@ -3,7 +3,9 @@
     title: "em_client"
     paths: [
       "/home/matt/projects/em_client"
+      "/home/matt/projects/em-web-client"
     ]
+    icon: "icon-comment-discussion"
   }
   {
     title: "siem"
@@ -11,5 +13,13 @@
     paths: [
       "/home/matt/projects/siem"
     ]
+    icon: "icon-issue-opened"
+  }
+  {
+    title: "Shuhari"
+    paths: [
+      "/home/matt/projects/shuhari"
+    ]
+    icon: "icon-browser"
   }
 ]

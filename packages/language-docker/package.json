@@ -2,40 +2,40 @@
   "_args": [
     [
       {
-        "raw": "/tmp/d-117123-1029-3tml7g/package.tgz",
+        "raw": "/tmp/d-11757-29614-53n8kg/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/tmp/d-117123-1029-3tml7g/package.tgz",
-        "spec": "/tmp/d-117123-1029-3tml7g/package.tgz",
+        "rawSpec": "/tmp/d-11757-29614-53n8kg/package.tgz",
+        "spec": "/tmp/d-11757-29614-53n8kg/package.tgz",
         "type": "local"
       },
-      "/tmp/apm-install-dir-117123-1029-1589hiq"
+      "/tmp/apm-install-dir-11757-29614-1dva3oh"
     ]
   ],
-  "_from": "../d-117123-1029-3tml7g/package.tgz",
-  "_id": "language-docker@1.1.7",
+  "_from": "../d-11757-29614-53n8kg/package.tgz",
+  "_id": "language-docker@1.1.8",
   "_inCache": true,
   "_installable": true,
   "_location": "/language-docker",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/tmp/d-117123-1029-3tml7g/package.tgz",
+    "raw": "/tmp/d-11757-29614-53n8kg/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/tmp/d-117123-1029-3tml7g/package.tgz",
-    "spec": "/tmp/d-117123-1029-3tml7g/package.tgz",
+    "rawSpec": "/tmp/d-11757-29614-53n8kg/package.tgz",
+    "spec": "/tmp/d-11757-29614-53n8kg/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-117123-1029-3tml7g/package.tgz",
-  "_shasum": "921d5f845414c0f22893b78483fb3584d43d2d59",
+  "_resolved": "file:../d-11757-29614-53n8kg/package.tgz",
+  "_shasum": "13730989184f2d85178f464d011af62eb519c582",
   "_shrinkwrap": null,
-  "_spec": "/tmp/d-117123-1029-3tml7g/package.tgz",
-  "_where": "/tmp/apm-install-dir-117123-1029-1589hiq",
+  "_spec": "/tmp/d-11757-29614-53n8kg/package.tgz",
+  "_where": "/tmp/apm-install-dir-11757-29614-1dva3oh",
   "bugs": {
     "url": "https://github.com/jagregory/language-docker/issues"
   },
@@ -56,5 +56,5 @@
     "type": "git",
     "url": "git+https://github.com/jagregory/language-docker.git"
   },
-  "version": "1.1.7"
+  "version": "1.1.8"
 }
